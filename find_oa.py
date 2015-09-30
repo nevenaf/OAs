@@ -48,7 +48,7 @@ if time_out_str != '':
 directory = './'
 file_name = ''
 sub_array_str = raw_input('Do you wish to specify a subset of rows that must be contained in the array? [Y/N] ').strip()
-if sub_array_str[0] in ['Y', 'y']:
+if len(sub_array_str)>0 and sub_array_str[0] in ['Y', 'y']:
     directory = raw_input('Enter directory of the file which contains the subarray: ')
     file_name = raw_input('Enter the name of the file with the subarray (must be .p file): ')
    
